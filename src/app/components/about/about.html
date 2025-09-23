@@ -1,5 +1,136 @@
-<div>
+<!-- <div>
     <div>
         <img src="/assets/about1.png" alt="" />
     </div>    
-</div>
+</div> -->
+
+<!-- about-us.component.html -->
+
+
+
+<section class="bg-white py-16 px-4 md:px-12">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+    <!-- Left Side Text -->
+    <div class="space-y-6">
+      <p class="text-red-600 font-semibold flex items-center gap-2">
+        About Our Company
+        <span class="h-px w-8 bg-red-600 inline-block"></span>
+      </p>
+
+      <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-snug">
+        Strengthening Your Workforce
+      </h1>
+
+      <p class="text-gray-700 leading-relaxed">
+        Cosmos Group is a dynamic organization providing a wide array of innovative and unique solutions in a number of fields. 
+        The organization was established in 1985 by Late S.N. Trivedi, an ex-Indian Air Force. Operating for more than three decades, 
+        the organization has evolved in itself, as well as in its services. Presently, Cosmos Group is spearheaded under the leadership 
+        of Dr. Sameer Trivedi, son of Late S.N. Trivedi.
+      </p>
+
+      <p class="text-gray-700 leading-relaxed">
+        Cosmos Group, an ISO 9001-2015 certified company is a highly professional, employee-friendly, and compliant organization that 
+        deals with the most important asset for any organization – Human resources. Cosmos is India’s leading Integrated Security & 
+        Manpower Solution Organization, its headquarter is based in Gandhinagar, Gujarat, India and has its branches and operation 
+        all over the country.
+      </p>
+
+      <p class="text-gray-700 leading-relaxed">
+        Cosmos Group, with a customer-centric approach and focus on customer satisfaction, brings about a wide range of high-quality 
+        services under one roof. Cosmos Group takes pride in being a leading provider of services that are listed below.
+      </p>
+    </div>
+
+    <!-- Right Side Images -->
+    <div class="relative flex justify-center md:justify-end">
+      <!-- Top Image -->
+      <img
+        src="assets/about-1.png"
+        alt="About Cosmos Group"
+        class="rounded-lg shadow-lg w-72 md:w-96"
+      />
+
+      <!-- Bottom Image with overlay pattern -->
+      <div class="absolute -bottom-10 -left-8">
+        <img
+          src="assets/about-2.png"
+          alt="Security Services"
+          class="rounded-lg shadow-lg w-60 md:w-80 border-8 border-white"
+        />
+        <!-- Dotted pattern -->
+        <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-[radial-gradient(circle,_#facc15_2px,_transparent_2px)] [background-size:12px_12px]"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-gray-50 py-12 px-4 md:px-16">
+  <div class="max-w-5xl mx-auto space-y-12">
+
+    <!-- Hero / Intro -->
+    <div class="text-center space-y-4">
+      <h1 class="text-3xl md:text-5xl font-bold text-gray-800">Strengthening Your Workforce</h1>
+      <p class="text-lg md:text-xl text-gray-600">
+        Cosmos Group is a dynamic organization providing a wide array of innovative and unique solutions in a number of fields. The organization was established in 1985 by Late S.N. Trivedi, an ex-Indian Air Force. Operating for more than three decades, the organization has evolved in itself, as well as in its services. Presently, Cosmos Group is spearheaded under the leadership of Dr. Sameer Trivedi, son of Late S.N. Trivedi.
+      </p>
+      <p class="text-lg md:text-xl text-gray-600">
+        Cosmos Group, an ISO 9001-2015 certified company is a highly professional, employee-friendly, and compliant organization that deals with the most important asset for any organization – Human resources. Cosmos is India’s leading Integrated Security & Manpower Solution Organization, its headquarter is based in Gandhinagar, Gujarat, India and has its branches and operation all over the country.
+      </p>
+    </div>
+
+    <!-- What We Do / Services -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div *ngFor="let service of servicesList" class="flex items-start space-x-4">
+        <div class="flex-shrink-0">
+          <!-- optionally icon here -->
+          <span class="h-6 w-6 bg-indigo-500 rounded-full"></span>
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold text-gray-800">{{ service.title }}</h2>
+          <p class="text-gray-600">{{ service.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Values, Mission, Vision -->
+    <div class="space-y-8 md:space-y-0 md:grid md:grid-cols-3 md:gap-8">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Values</h3>
+        <p class="text-gray-600">
+          Integrity, excellence, a customer-centric approach, and a high level of professionalism, all of which are our core values. At Cosmos Group, every member stands by the principles of the organization where the customers are the first priority. Our services and solutions are tailor-made to meet the specific needs of every customer, ensuring a hundred percent satisfaction among all.
+        </p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
+        <ul class="list-disc list-inside text-gray-600 space-y-2">
+          <li>Provide the highest standards of every service we offer that completely satisfies the aspirations of our customers.</li>
+          <li>Deliver an entirely safe, inspirational, and motivational environment for our customers & employees.</li>
+          <li>Live up to our proven image in the industry and maintaining a great relationship with each of our customers and stakeholders.</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
+        <p class="text-gray-600">
+          Our vision is to emerge as a true leader in the industry by providing premium quality services by understanding the evolving needs of our customers.
+        </p>
+      </div>
+    </div>
+
+    <!-- Team / Stats -->
+    <div class="text-center space-y-4">
+      <h2 class="text-3xl font-semibold text-gray-800">Our Team</h2>
+      <p class="text-gray-600">
+        We believe that it is our team that has taken Cosmos Group to the level where it is at present. Our team is the most important asset without which success would not have been possible. Cosmos Group announces with pride that it has a gigantic team of <span class="font-bold">35,000+ employees</span> all working together as a large family. Each of the members of our team has the necessary skillset and expertise, making them the best in their field of work.
+      </p>
+      <p class="text-gray-600">
+        We maintain a sheer level of professionalism in every step we take and every service we provide. It is to make sure that each of our customers is satisfied to the fullest without getting even a single chance to complain about our services and solutions. Our team makes use of the latest tools and technologies to provide top-notch solutions to all our customers.
+      </p>
+      <p class="text-gray-600">
+        We are operating round the clock to cater to the needs of customers, and we assure every customer to provide them with prompt services as per their requirements. All you need to do is to pick up your phone and give us a call on our helpline numbers <span class="font-medium">+91 9825112727 & +91 9265627605</span>, or you can contact us online as well. Once you approach us, the rest will be taken care of by our team of experts so that you can eliminate all your worries and relax.
+      </p>
+    </div>
+
+  </div>
+</section>
