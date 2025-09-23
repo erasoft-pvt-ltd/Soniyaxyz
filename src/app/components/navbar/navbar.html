@@ -1,0 +1,60 @@
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-26">
+      
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a routerLink="" class="text-2xl font-bold text-blue-600"></a>
+        <img src="logo.png" width="60" alt=""/>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-6">
+        <a routerLink="/home" routerLinkActive="active" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a routerLink="/about" routerLinkActive="active" class="text-gray-700 hover:text-blue-600">About</a>
+        <a routerLink="/our-services" routerLinkActive="active" class="text-gray-700 hover:text-blue-600">Services</a>
+        <a routerLink="/our-customers" routerLinkActive="active" class="text-gray-700 hover:text-blue-600">Customers</a>
+        <a routerLink="/career" routerLinkActive="active" class="text-gray-700 hover:text-blue-600">Career</a>
+        <a routerLink="/gallery" routerLinkActive="active" class="text-gray-700 hover:text-blue-600">Gallery</a>
+        <a routerLink="/contact" routerLinkActive="active" class="text-gray-700 hover:text-blue-600">Contact</a>
+      </nav>
+
+      <!-- Right Buttons -->
+      <div class="flex items-center space-x-4">
+        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+          Login
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <div class="md:hidden">
+        <button (click)="toggleMenu()" class="text-gray-700 focus:outline-none">
+          <!-- Open Icon -->
+          <svg *ngIf="!isMenuOpen" xmlns="http://www.w3.org/2000/svg"
+               class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+               stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <!-- Close Icon -->
+          <svg *ngIf="isMenuOpen" xmlns="http://www.w3.org/2000/svg"
+               class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+               stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div *ngIf="isMenuOpen" class="md:hidden bg-white border-t border-gray-200">
+    <nav class="flex flex-col p-4 space-y-2">
+      <a routerLink="/home" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a routerLink="/about" class="text-gray-700 hover:text-blue-600">About</a>
+      <a routerLink="/services" class="text-gray-700 hover:text-blue-600">Services</a>
+      <a routerLink="/contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+    </nav>
+  </div>
+</header>
