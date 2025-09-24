@@ -11,22 +11,22 @@ export class Milestones {
   milestones = [
     {
       icon: 'fa-solid fa-id-card',
-      value: '35+',
+      value: '2+',
       label: 'Year Experience'
     },
     {
       icon: 'fa-solid fa-smile',
-      value: '25000+',
+      value: '200+',
       label: 'Happy Workforce'
     },
     {
       icon: 'fa-solid fa-user-tie',
-      value: '1250+',
+      value: '50+',
       label: 'Happy Customers'
     },
     {
       icon: 'fa-solid fa-users',
-      value: '320000+',
+      value: '500+',
       label: 'Employment Generated'
     }
   ];
