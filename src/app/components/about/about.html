@@ -6,6 +6,7 @@
 
 <!-- about-us.component.html -->
 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
 <section class="bg-white py-16 px-4 md:px-12">
@@ -13,32 +14,32 @@
 
     <!-- Left Side Text -->
     <div class="space-y-6">
-      <p class="text-red-600 font-semibold flex items-center gap-2">
+      <p class="text-blue-600 font-semibold flex items-center gap-2">
         About Our Company
         <span class="h-px w-8 bg-red-600 inline-block"></span>
       </p>
 
       <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-snug">
-        Strengthening Your Workforce
+        Shaping a Future-Ready Workforce
       </h1>
 
       <p class="text-gray-700 leading-relaxed">
-        Cosmos Group is a dynamic organization providing a wide array of innovative and unique solutions in a number of fields. 
+        Sarvsiddh Group is a dynamic organization providing a wide array of innovative and unique solutions in a number of fields. 
         The organization was established in 1985 by Late S.N. Trivedi, an ex-Indian Air Force. Operating for more than three decades, 
-        the organization has evolved in itself, as well as in its services. Presently, Cosmos Group is spearheaded under the leadership 
-        of Dr. Sameer Trivedi, son of Late S.N. Trivedi.
+        the organization has evolved in itself, as well as in its services. Presently, Sarvsiddh Group is spearheaded under the leadership 
+        of Mr SHIDHARTH PANDEY.
       </p>
 
       <p class="text-gray-700 leading-relaxed">
-        Cosmos Group, an ISO 9001-2015 certified company is a highly professional, employee-friendly, and compliant organization that 
+        Sarvsiddh Group, an ISO 9001-2015 certified company is a highly professional, employee-friendly, and compliant organization that 
         deals with the most important asset for any organization – Human resources. Cosmos is India’s leading Integrated Security & 
-        Manpower Solution Organization, its headquarter is based in Gandhinagar, Gujarat, India and has its branches and operation 
+        Manpower Solution Organization, its headquarter is based in Devghat, Jhalwa, Prayaraj, UP India and has its branches and operation 
         all over the country.
       </p>
 
       <p class="text-gray-700 leading-relaxed">
-        Cosmos Group, with a customer-centric approach and focus on customer satisfaction, brings about a wide range of high-quality 
-        services under one roof. Cosmos Group takes pride in being a leading provider of services that are listed below.
+        Sarvsiddh Group, with a customer-centric approach and focus on customer satisfaction, brings about a wide range of high-quality 
+        services under one roof. Sarvsiddh Group takes pride in being a leading provider of services that are listed below.
       </p>
     </div>
 
@@ -47,7 +48,7 @@
       <!-- Top Image -->
       <img
         src="assets/about-1.png"
-        alt="About Cosmos Group"
+        alt="About Sarvsiddh Group"
         class="rounded-lg shadow-lg w-72 md:w-96"
       />
 
@@ -66,71 +67,119 @@
 </section>
 
 
-<section class="bg-gray-50 py-12 px-4 md:px-16">
-  <div class="max-w-5xl mx-auto space-y-12">
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <!-- Heading -->
+  <h2 class="text-blue-600 font-semibold">Sarvsiddh Group</h2>
+  <h1 class="text-4xl font-bold text-gray-900 mb-4">About Us</h1>
+  
+  <!-- Description -->
+  <p class="text-gray-700 leading-relaxed mb-10">
+    Our full range of services caters to the individualized needs of the customers. 
+    We have a dedicated team that is committed to providing the best of services. 
+    We strive to come with the best solutions in each category and try to the best of 
+    our possibilities to continually improve our service standards. We, at Sarvsiddh Group, 
+    have the highest standards of integrity as well as excellence at every level of our service.
+  </p>
 
-    <!-- Hero / Intro -->
-    <div class="text-center space-y-4">
-      <h1 class="text-3xl md:text-5xl font-bold text-gray-800">Strengthening Your Workforce</h1>
-      <p class="text-lg md:text-xl text-gray-600">
-        Cosmos Group is a dynamic organization providing a wide array of innovative and unique solutions in a number of fields. The organization was established in 1985 by Late S.N. Trivedi, an ex-Indian Air Force. Operating for more than three decades, the organization has evolved in itself, as well as in its services. Presently, Cosmos Group is spearheaded under the leadership of Dr. Sameer Trivedi, son of Late S.N. Trivedi.
-      </p>
-      <p class="text-lg md:text-xl text-gray-600">
-        Cosmos Group, an ISO 9001-2015 certified company is a highly professional, employee-friendly, and compliant organization that deals with the most important asset for any organization – Human resources. Cosmos is India’s leading Integrated Security & Manpower Solution Organization, its headquarter is based in Gandhinagar, Gujarat, India and has its branches and operation all over the country.
-      </p>
-    </div>
 
-    <!-- What We Do / Services -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div *ngFor="let service of servicesList" class="flex items-start space-x-4">
-        <div class="flex-shrink-0">
-          <!-- optionally icon here -->
-          <span class="h-6 w-6 bg-indigo-500 rounded-full"></span>
-        </div>
-        <div>
-          <h2 class="text-xl font-semibold text-gray-800">{{ service.title }}</h2>
-          <p class="text-gray-600">{{ service.description }}</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Values, Mission, Vision -->
-    <div class="space-y-8 md:space-y-0 md:grid md:grid-cols-3 md:gap-8">
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Values</h3>
-        <p class="text-gray-600">
-          Integrity, excellence, a customer-centric approach, and a high level of professionalism, all of which are our core values. At Cosmos Group, every member stands by the principles of the organization where the customers are the first priority. Our services and solutions are tailor-made to meet the specific needs of every customer, ensuring a hundred percent satisfaction among all.
-        </p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
-        <ul class="list-disc list-inside text-gray-600 space-y-2">
-          <li>Provide the highest standards of every service we offer that completely satisfies the aspirations of our customers.</li>
-          <li>Deliver an entirely safe, inspirational, and motivational environment for our customers & employees.</li>
-          <li>Live up to our proven image in the industry and maintaining a great relationship with each of our customers and stakeholders.</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
-        <p class="text-gray-600">
-          Our vision is to emerge as a true leader in the industry by providing premium quality services by understanding the evolving needs of our customers.
-        </p>
-      </div>
-    </div>
-
-    <!-- Team / Stats -->
-    <div class="text-center space-y-4">
-      <h2 class="text-3xl font-semibold text-gray-800">Our Team</h2>
-      <p class="text-gray-600">
-        We believe that it is our team that has taken Cosmos Group to the level where it is at present. Our team is the most important asset without which success would not have been possible. Cosmos Group announces with pride that it has a gigantic team of <span class="font-bold">35,000+ employees</span> all working together as a large family. Each of the members of our team has the necessary skillset and expertise, making them the best in their field of work.
-      </p>
-      <p class="text-gray-600">
-        We maintain a sheer level of professionalism in every step we take and every service we provide. It is to make sure that each of our customers is satisfied to the fullest without getting even a single chance to complain about our services and solutions. Our team makes use of the latest tools and technologies to provide top-notch solutions to all our customers.
-      </p>
-      <p class="text-gray-600">
-        We are operating round the clock to cater to the needs of customers, and we assure every customer to provide them with prompt services as per their requirements. All you need to do is to pick up your phone and give us a call on our helpline numbers <span class="font-medium">+91 9825112727 & +91 9265627605</span>, or you can contact us online as well. Once you approach us, the rest will be taken care of by our team of experts so that you can eliminate all your worries and relax.
-      </p>
-    </div>
-
+  <div class="max-w-4xl mx-auto px-6 py-10">
+  <!-- Manpower Services -->
+  <div class="mb-8">
+    <h2 class="bg-blue-600 text-white text-lg font-bold uppercase text-center py-2">
+      Manpower Services
+    </h2>
+    <ul class="list-inside mt-4 text-gray-800 space-y-1">
+      <li>Manpower Services</li>
+      <li>Payroll Services</li>
+      <li>Placement Services</li>
+    </ul>
   </div>
-</section>
+
+  <!-- Housekeeping Services -->
+  <div>
+    <h2 class="bg-blue-600 text-white text-lg font-bold uppercase text-center py-2">
+      Housekeeping Services
+    </h2>
+    <ul class="list-inside mt-4 text-gray-800 space-y-1">
+      <li>Corporate Housekeeping</li>
+      <li>Industrial Cleaning</li>
+      <li>Bank Housekeeping</li>
+      <li>Warehouse Housekeeping</li>
+      <li>Hotel Housekeeping</li>
+    </ul>
+  </div>
+</div>
+
+
+
+  <!-- Accordion -->
+  <div class="space-y-4">
+    <!-- Values -->
+    <div class=" overflow-hidden">
+      <button 
+        (click)="toggleAccordion('values')" 
+        class="w-full flex justify-between items-center bg-blue-600 text-white font-semibold px-5 py-3 focus:outline-none">
+        <span class="flex items-center gap-2">
+          <span class="material-icons">emoji_events</span> Our Values
+        </span>
+        <span class="material-icons">{{ activePanel === 'values' ? 'expand_less' : 'expand_more' }}</span>
+      </button>
+      <div *ngIf="activePanel === 'values'" class="px-5 py-4 text-gray-700 bg-gray-50">
+        Sarvsiddh Group is built on integrity, excellence, a customer-centric approach, 
+        and a high level of professionalism, all of which are our core values. At Sarvsiddh Group, 
+        every member stands by the principles of the organization where the customers are the first priority. 
+        Our services and solutions are tailor-made to meet the specific needs of every customer, 
+        ensuring a hundred percent satisfaction among all.
+      </div>
+    </div>
+
+    <!-- Mission -->
+    <div class="overflow-hidden">
+      <button 
+        (click)="toggleAccordion('mission')" 
+        class="w-full flex justify-between items-center bg-gray-100 text-gray-800 font-semibold px-5 py-3 focus:outline-none">
+        <span class="flex items-center gap-2">
+          <span class="material-icons">send</span> Our Mission
+        </span>
+        <span class="material-icons">{{ activePanel === 'mission' ? 'expand_less' : 'expand_more' }}</span>
+      </button>
+      <div *ngIf="activePanel === 'mission'" class="px-5 py-4 text-gray-700 bg-gray-50">
+        <p> Provide the highest standards of every service we offer that completely satisfies the aspirations of our customers.</p>
+        <p>Deliver an entirely safe, inspirational, and motivational environment for our customers & employees.</p>
+        <p> Live up to our proven image in the industry and maintaining a great relationship with each of our customers and stakeholders.</p>
+      </div>
+    </div>
+
+    <!-- Vision -->
+    <div class="overflow-hidden">
+      <button 
+        (click)="toggleAccordion('vision')" 
+        class="w-full flex justify-between items-center bg-gray-100 text-gray-800 font-semibold px-5 py-3 focus:outline-none">
+        <span class="flex items-center gap-2">
+          <span class="material-icons">flag</span> Our Vision
+        </span>
+        <span class="material-icons">{{ activePanel === 'vision' ? 'expand_less' : 'expand_more' }}</span>
+      </button>
+      <div *ngIf="activePanel === 'vision'" class="px-5 py-4 text-gray-700 bg-gray-50">
+        Our vision is to emerge as a true leader in the industry by providing premium quality services by understanding the evolving needs of our customers.
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div class="overflow-hidden">
+      <button 
+        (click)="toggleAccordion('team')" 
+        class="w-full flex justify-between items-center bg-gray-100 text-gray-800 font-semibold px-5 py-3 focus:outline-none">
+        <span class="flex items-center gap-2">
+          <span class="material-icons">groups</span> Our Team
+        </span>
+        <span class="material-icons">{{ activePanel === 'team' ? 'expand_less' : 'expand_more' }}</span>
+      </button>
+      <div *ngIf="activePanel === 'team'" class="px-5 py-4 text-gray-700 bg-gray-50">
+        We believe that it is our team that has taken Sarvsiddh Group to the level where it is at present. Our team is the most important asset without which success would not have been possible. Sarvsiddh Group announces with pride that it has a gigantic team of 35000+ employees all working together as a large family. Each of the members of our team has the necessary skillset and expertise, making them the best in their field of work.
+
+We maintain a sheer level of professionalism in every step we take and every service we provide. It is to make sure that each of our customers is satisfied to the fullest without getting even a single chance to complain about our services and solutions. Our team makes use of the latest tools and technologies to provide top-notch solutions to all our customers. We are operating round the clock to cater to the needs of customers, and we assure every customer to provide them with prompt services as per their requirements. All you need to do is to pick up your phone and give us a call on our helpline numbers +91 9825112727 & +91 9265627605, or you can contact us online as well. Once you approach us, the rest will be taken care of by our team of experts so that you can eliminate all your worries and relax.
+      </div>
+    </div>
+  </div>
+</div>

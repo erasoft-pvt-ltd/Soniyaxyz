@@ -13,4 +13,9 @@ export class About {
     { title: 'Detective & Private Investigation', description: '...' },
     // etc.
   ];
+  activePanel: string | null = 'values'; // Default open panel
+
+  toggleAccordion(panel: string) {
+    this.activePanel = this.activePanel === panel ? null : panel;
+  }
 }
