@@ -6,6 +6,7 @@ import { OurCustomer } from './components/our-customer/our-customer';
 import { Career } from './components/career/career';
 import { Gallery } from './components/gallery/gallery';
 import { Contact } from './components/contact/contact';
+import { PageNotFound } from './components/page-not-found/page-not-found';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -36,6 +37,7 @@ export const routes: Routes = [
     {
         path:"contact",
         component:Contact
-    }
+    },
+    { path: '**', component: PageNotFound }, // 404 fallback
 
 ];
