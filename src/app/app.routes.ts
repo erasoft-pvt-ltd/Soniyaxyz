@@ -7,6 +7,9 @@ import { Career } from './components/career/career';
 import { Gallery } from './components/gallery/gallery';
 import { Contact } from './components/contact/contact';
 import { PageNotFound } from './components/page-not-found/page-not-found';
+import { Login } from './components/login/login';
+import { Jobs } from './components/jobs/jobs';
+import { CreateJobs } from './components/create-jobs/create-jobs';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -37,6 +40,18 @@ export const routes: Routes = [
     {
         path:"contact",
         component:Contact
+    },
+    {
+        path:"admin/login",
+        component:Login
+    },
+    {
+        path:"admin/jobs",
+        component:Jobs
+    },
+    {
+        path:"admin/create-jobs",
+        component:CreateJobs
     },
     { path: '**', component: PageNotFound }, // 404 fallback
 
