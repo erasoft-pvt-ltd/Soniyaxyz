@@ -10,12 +10,13 @@ import { Component } from '@angular/core';
 export class Gallery {
 
   images = [
-    { src: 'https://source.unsplash.com/random/400x400?sig=1', alt: 'Image 1', title: 'Beautiful Scene 1' },
-    { src: 'https://source.unsplash.com/random/400x400?sig=2', alt: 'Image 2', title: 'Beautiful Scene 2' },
-    { src: 'https://source.unsplash.com/random/400x400?sig=3', alt: 'Image 3', title: 'Beautiful Scene 3' },
-    { src: 'https://source.unsplash.com/random/400x400?sig=4', alt: 'Image 4', title: 'Beautiful Scene 4' },
-    { src: 'https://source.unsplash.com/random/400x400?sig=5', alt: 'Image 5', title: 'Beautiful Scene 5' },
-    { src: 'https://source.unsplash.com/random/400x400?sig=6', alt: 'Image 6', title: 'Beautiful Scene 6' }
+    { src: 'assets/gallery1.jpg', alt: 'Image 1', title: 'Job Fair' },
+    { src: 'assets/gallery2.jpg', alt: 'Image 2', title: 'Job Fair' },
+    { src: 'assets/gallery3.jpg', alt: 'Image 3', title: 'Job Fair' },
+    { src: 'assets/gallery4.jpg', alt: 'Image 4', title: 'Job Fair' },
+    { src: 'assets/gallery5.jpg', alt: 'Image 5', title: 'Job Fair' },
+    { src: 'assets/gallery6.jpg', alt: 'Image 6', title: 'Job Fair' },
+    { src: 'assets/gallery7.jpg', alt: 'Image 6', title: 'Job Fair at office' }
   ];
 
 }

@@ -10,6 +10,8 @@ import { PageNotFound } from './components/page-not-found/page-not-found';
 import { Login } from './components/login/login';
 import { Jobs } from './components/jobs/jobs';
 import { CreateJobs } from './components/create-jobs/create-jobs';
+import { AboutMdLearnMore } from './components/about-md-learn-more/about-md-learn-more';
+import { AboutDirectorLearnMore } from './components/about-director-learn-more/about-director-learn-more';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,6 +22,14 @@ export const routes: Routes = [
     {
         path:"about",
         component:About
+    },
+    {
+        path:"about-md",
+        component:AboutMdLearnMore
+    },
+    {
+        path:"about-director",
+        component:AboutDirectorLearnMore
     },
     {
         path:"our-services",

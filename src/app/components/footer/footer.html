@@ -5,14 +5,14 @@
       <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
         <div>
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                <img src="/assets/logo.png?" alt="" class="h-30 w-auto" />
+                <img (click)="scrollToTop()" routerLink="/home" src="/assets/logo.png?" alt="" class="p-5 h-36 w-auto"/>
             </h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                    <a href="#" class=" hover:underline">About Us</a>
+                    <a routerLink="/about" (click)="scrollToTop()" class=" hover:underline">About Us</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class=" hover:underline">Our Services</a>
+                    <a routerLink="/our-services" class=" hover:underline">Our Services</a>
                 </li>
                 
                 <li class="mb-4">
@@ -28,18 +28,18 @@
                     <a href="#" class="hover:underline">Facebook</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class="hover:underline">Contact Us</a>
+                    <a routerLink="/contact" (click)="scrollToTop()" class="hover:underline">Contact Us</a>
                 </li>
 
                 <li class="mb-4">
-                    <a href="#" class="hover:underline">Customers</a>
+                    <a routerLink="/our-customers" (click)="scrollToTop()" class="hover:underline">Customers</a>
                 </li>
 
                 <li class="mb-4">
-                    <a href="#" class="hover:underline">Career</a>
+                    <a routerLink="/career" (click)="scrollToTop()" class="hover:underline">Career</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class="hover:underline">Gallery</a>
+                    <a routerLink="/gallery" (click)="scrollToTop()" class="hover:underline">Gallery</a>
                 </li>
 
                 

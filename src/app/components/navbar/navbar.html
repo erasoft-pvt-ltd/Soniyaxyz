@@ -29,27 +29,27 @@
       
       <!-- Logo -->
       <div class="flex-shrink-0">
-        <a routerLink="" class="text-2xl font-bold text-blue-600"></a>
-        <img src="logo.png" class="p-5 h-42 w-auto" alt=""/>
+        <!-- <a routerLink="/home" class="text-2xl font-bold text-blue-600"></a> -->
+        <img routerLink="/home" src="assets/logo.png" class="p-5 h-36 w-auto" alt=""/>
       </div>
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex space-x-6">
-        <a routerLink="/home" routerLinkActive="active" class="text-gray-700 hover:text-blue-600">Home</a>    
-        <a routerLink="/about" #about routerLinkActive="active" class="text-gray-700 hover:text-blue-600">About</a>
-        <a routerLink="/our-services" routerLinkActive="active" class="text-gray-700 hover:text-blue-600">Services</a>
-        <a routerLink="/our-customers" routerLinkActive="active" class="text-gray-700 hover:text-blue-600">Customers</a>
-        <a routerLink="/career" routerLinkActive="active" class="text-gray-700 hover:text-blue-600">Career</a>
-        <a routerLink="/gallery" routerLinkActive="active" class="text-gray-700 hover:text-blue-600">Gallery</a>
-        <a routerLink="/contact" routerLinkActive="active" class="text-gray-700 hover:text-blue-600">Contact</a>
+        <a routerLink="/home" routerLinkActive="active" (click)="scrollToTop()" class="text-gray-700 hover:text-blue-600">Home</a>    
+        <a routerLink="/about" #about routerLinkActive="active" (click)="scrollToTop()" class="text-gray-700 hover:text-blue-600">About</a>
+        <a routerLink="/our-services" routerLinkActive="active" (click)="scrollToTop()" class="text-gray-700 hover:text-blue-600">Services</a>
+        <a routerLink="/our-customers" routerLinkActive="active" (click)="scrollToTop()" class="text-gray-700 hover:text-blue-600">Customers</a>
+        <a routerLink="/career" routerLinkActive="active" (click)="scrollToTop()" class="text-gray-700 hover:text-blue-600">Career</a>
+        <a routerLink="/gallery" routerLinkActive="active" (click)="scrollToTop()" class="text-gray-700 hover:text-blue-600">Gallery</a>
+        <a routerLink="/contact" routerLinkActive="active" (click)="scrollToTop()" class="text-gray-700 hover:text-blue-600">Contact</a>
       </nav>
 
       <!-- Right Buttons -->
-      <!-- <div class="flex items-center space-x-4">
-        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+      <div class="flex items-center space-x-4">
+        <button routerLink="/admin/login" (click)="scrollToTop()" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
           Login
         </button>
-      </div> -->
+      </div>
 
       <!-- Mobile Hamburger -->
       <div class="md:hidden">
@@ -76,10 +76,13 @@
   <!-- Mobile Nav -->
   <div *ngIf="isMenuOpen" class="md:hidden bg-white border-t border-gray-200">
     <nav class="flex flex-col p-4 space-y-2">
-      <a routerLink="/home" class="text-gray-700 hover:text-blue-600">Home</a>
-      <a routerLink="/about" class="text-gray-700 hover:text-blue-600">About</a>
-      <a routerLink="/services" class="text-gray-700 hover:text-blue-600">Services</a>
-      <a routerLink="/contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+      <a routerLink="/home" routerLinkActive="active" (click)="scrollToTop()" class="text-gray-700 hover:text-blue-600">Home</a>    
+        <a routerLink="/about" #about routerLinkActive="active" (click)="scrollToTop()" class="text-gray-700 hover:text-blue-600">About</a>
+        <a routerLink="/our-services" routerLinkActive="active" (click)="scrollToTop()" class="text-gray-700 hover:text-blue-600">Services</a>
+        <a routerLink="/our-customers" routerLinkActive="active" (click)="scrollToTop()" class="text-gray-700 hover:text-blue-600">Customers</a>
+        <a routerLink="/career" routerLinkActive="active" (click)="scrollToTop()" class="text-gray-700 hover:text-blue-600">Career</a>
+        <a routerLink="/gallery" routerLinkActive="active" (click)="scrollToTop()" class="text-gray-700 hover:text-blue-600">Gallery</a>
+        <a routerLink="/contact" routerLinkActive="active" (click)="scrollToTop()" class="text-gray-700 hover:text-blue-600">Contact</a>
     </nav>
   </div>
 </header>
