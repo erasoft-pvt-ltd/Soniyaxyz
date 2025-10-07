@@ -9,4 +9,7 @@ import { RouterLink } from '@angular/router';
 })
 export class AboutMd {
 
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
