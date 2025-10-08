@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { AboutMd } from '../about-md/about-md';
 import { AboutDirector } from '../about-director/about-director';
+import { AboutCoo } from '../about-coo/about-coo';
 
 @Component({
   selector: 'app-about',
-  imports: [CommonModule, AboutMd, AboutDirector],
+  imports: [CommonModule, AboutMd, AboutDirector, AboutCoo],
   templateUrl: './about.html',
   styleUrl: './about.css'
 })

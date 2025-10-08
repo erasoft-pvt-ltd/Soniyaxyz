@@ -12,6 +12,7 @@ import { Jobs } from './components/jobs/jobs';
 import { CreateJobs } from './components/create-jobs/create-jobs';
 import { AboutMdLearnMore } from './components/about-md-learn-more/about-md-learn-more';
 import { AboutDirectorLearnMore } from './components/about-director-learn-more/about-director-learn-more';
+import { AboutCooLearnMore } from './components/about-coo-learn-more/about-coo-learn-more';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -30,6 +31,10 @@ export const routes: Routes = [
     {
         path:"about-director",
         component:AboutDirectorLearnMore
+    },
+    {
+        path:"about-coo",
+        component:AboutCooLearnMore
     },
     {
         path:"our-services",

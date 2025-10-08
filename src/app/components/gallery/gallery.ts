@@ -15,8 +15,7 @@ export class Gallery {
     { src: 'assets/gallery3.jpg', alt: 'Image 3', title: 'Job Fair' },
     { src: 'assets/gallery4.jpg', alt: 'Image 4', title: 'Job Fair' },
     { src: 'assets/gallery5.jpg', alt: 'Image 5', title: 'Job Fair' },
-    { src: 'assets/gallery6.jpg', alt: 'Image 6', title: 'Job Fair' },
-    { src: 'assets/gallery7.jpg', alt: 'Image 6', title: 'Job Fair at office' }
+    { src: 'assets/gallery6.jpg', alt: 'Image 6', title: 'Job Fair' }
   ];
 
 }
